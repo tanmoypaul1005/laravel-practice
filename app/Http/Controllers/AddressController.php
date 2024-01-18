@@ -14,7 +14,7 @@ class AddressController extends Controller {
                 'title' => 'required',
                 'address' => 'required',
             ] );
-            
+
             if ( $validator->fails() ) {
                 return  response()->json( [
                     'status'=>500,
@@ -22,6 +22,7 @@ class AddressController extends Controller {
                     'msg'=>$validator->errors()
                 ] );
             }
+            
             $address = new Address();
             $address->title = $request->title;
             $address->address = $request->address;
