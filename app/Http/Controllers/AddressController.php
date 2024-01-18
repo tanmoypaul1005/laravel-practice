@@ -14,6 +14,7 @@ class AddressController extends Controller {
                 'title' => 'required',
                 'address' => 'required',
             ] );
+            
             if ( $validator->fails() ) {
                 return  response()->json( [
                     'status'=>500,
