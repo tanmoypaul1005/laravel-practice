@@ -35,6 +35,7 @@ class AddressController extends Controller {
                 'data'=>$address,
                 'message'=>'Address Added Successfully'
             ] );
+            
         } catch( Exception $e ) {
             return response()->json( [
                 'status'=>500,
