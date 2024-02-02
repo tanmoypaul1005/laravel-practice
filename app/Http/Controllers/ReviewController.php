@@ -73,7 +73,7 @@ class ReviewController extends Controller {
             ] );
 
         } catch( Exception $e ) {
-            
+
             return  response()->json( [
                 'status'=>500,
                 'success'=>false,
@@ -145,8 +145,6 @@ class ReviewController extends Controller {
                         'message'=>$validator->errors()->first( 'rating' )
                     ] );
                 }
-
-
              }
 
              if ( $request->rating > 5 ) {
