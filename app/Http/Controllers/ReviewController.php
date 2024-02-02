@@ -13,6 +13,7 @@ class ReviewController extends Controller {
     //add reviews
     function addReview( Request $request ) {
         try {
+            
             $validator = Validator::make( $request->all(), [
                 'products_id'=>'required',
                 'rating'=>'required',
