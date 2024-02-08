@@ -29,7 +29,6 @@ class OrderController extends Controller {
                 ] );
             }
 
-
             foreach ( $request->cart as $item ) {
                 $cart = Cart::find( $item );
                 $product = Product::find( $cart->products_id );
