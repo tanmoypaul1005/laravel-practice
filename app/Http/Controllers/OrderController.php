@@ -104,7 +104,6 @@ class OrderController extends Controller {
                     'data'=>null,
                     'message'=>'Invalid status'
                 ] );
-
             }
 
             $order = Order::find( $request->id );
