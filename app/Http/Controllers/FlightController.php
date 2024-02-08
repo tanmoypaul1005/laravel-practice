@@ -12,7 +12,6 @@ class FlightController extends Controller
     {
         try {
             $categories = Category::get();
-
             return $categories;
         } catch (Exception $e) {
             return "fail";
