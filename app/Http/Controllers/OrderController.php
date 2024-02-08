@@ -118,7 +118,6 @@ class OrderController extends Controller {
             }
             $order->status = $request->status;
             $order->update();
-
             $data = Order::with( 'order_products:id,name,price' )->get();
 
             return  response()->json( [
