@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
 class AddressController extends Controller {
+    
     function addAddress( Request $request ) {
         try {
             $validator = Validator::make( $request->all(), [
