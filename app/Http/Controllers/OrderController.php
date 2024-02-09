@@ -140,7 +140,6 @@ class OrderController extends Controller {
     function getOrder( Request $request ) {
         try {
             $order = Order::where( 'user_id', $request->user_id )->with( 'order_products:id,name,price' )->get();
-
             $total_price = 0;
             foreach ( $order as $item ) {
                 $total_price = $total_price+$item->price;
