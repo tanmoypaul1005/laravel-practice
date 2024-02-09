@@ -113,7 +113,6 @@ class UserController extends Controller {
                 'data'=>null,
                 'msg'=>'OTP sent fail'
             ] );
-
         }
     }
 
