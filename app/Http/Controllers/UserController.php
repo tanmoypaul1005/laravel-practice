@@ -142,5 +142,6 @@ class UserController extends Controller {
                 'msg'=>'OTP validate fail'
             ] );
         }
+        
     }
 }
