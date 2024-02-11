@@ -10,7 +10,6 @@ class FlightController extends Controller
 {
     public function getCategories()
     {
-        
         try {
             $categories = Category::get();
             return $categories;
